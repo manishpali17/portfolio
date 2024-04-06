@@ -18,7 +18,7 @@ export default function AboutSection() {
 
   return (
     <>
-      <div className="mb-5 flex w-full flex-col items-center justify-center text-white">
+      <div className="mb-5 flex w-full flex-col items-center justify-center dark:text-white">
         <div className="about flex max-w-4xl flex-col-reverse items-center gap-3 px-5 sm:flex-row-reverse md:px-0">
           <Image
             src={me}
@@ -33,27 +33,27 @@ export default function AboutSection() {
         </div>
 
         <div className="mx-5 mt-5 max-w-4xl space-y-5">
-          <p className="about font-SpaceGrotesk text-lg text-[#ADADAD]">
+          <p className="about font-SpaceGrotesk text-lg dark:text-[#ADADAD]">
             Name&apos;s <span className="text-orange-500">Manish</span>, a
             passionate{' '}
             <span className="text-purple-500">FullStack Web developer</span> who
             is currently based in Aligarh. I am {age} years old, but have at
             least 1 year of experience in building projects and developing.
           </p>
-          <p className="top font-SpaceGrotesk text-lg text-[#ADADAD]">
+          <p className="top font-SpaceGrotesk text-lg dark:text-[#ADADAD]">
             I hold a passion for developing things and believe that great things
             are often invisible. With an impactful thoughts and job, you can
             convey your story or the story of your business to a wider audience.
             I want to help you build an online brand and or strengthening your
             online brand.
           </p>
-          <p className="top font-SpaceGrotesk text-lg text-[#ADADAD]">
+          <p className="top font-SpaceGrotesk text-lg dark:text-[#ADADAD]">
             I&apos;m really flexible when it comes to achieving certain
             objectives. Think about developing top-notch web(apps) and website,
             but also there is competiton. When I start with a certain task, I do
             want to know what you&apos;re exactly in need of.
           </p>
-          <p className="top font-SpaceGrotesk text-lg font-bold text-[#ADADAD]">
+          <p className="top font-SpaceGrotesk text-lg font-bold dark:text-[#ADADAD]">
             Reason why I spend time in learning more skills is because of the
             fact that it makes me a more valuable person developer. I am a big
             believer in focus on a specific area and getting really good at it.

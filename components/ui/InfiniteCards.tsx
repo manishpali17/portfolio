@@ -4,8 +4,8 @@ import { type InfiniteCards } from '@/app/lib/definitions';
 export default function InfiniteCards({ data }: { data: InfiniteCards }) {
   return (
     <>
-      <div className="scroller relative mt-10 max-w-full cursor-pointer overflow-hidden will-change-auto sm:mt-24">
-        <div className="scroller-inner w-7xl animate-scroll flex gap-5">
+      <div className="scroller relative mt-10 max-w-full cursor-pointer overflow-hidden bg-slate-200 will-change-auto sm:mt-24">
+        <div className="scroller-inner w-7xl animate-scroll  flex gap-5">
           {data?.map((slide, index) => (
             <Image
               alt="Projects Images"
@@ -34,9 +34,9 @@ export default function InfiniteCards({ data }: { data: InfiniteCards }) {
           />
         </div>
         {/* fade */}
-        <div className="absolute left-0 top-0 h-full w-7 bg-gradient-to-r from-black to-transparent sm:w-20"></div>
-        <div className="absolute right-0 top-0 h-full w-7 bg-gradient-to-l from-black to-transparent sm:w-20"></div>
-        <div className="gradient-div absolute bottom-0 left-0 h-5 w-full"></div>
+        <div className="absolute left-0 top-0 h-full w-7 bg-gradient-to-r from-slate-200 to-transparent sm:w-20 dark:from-black"></div>
+        <div className="absolute right-0 top-0 h-full w-7 bg-gradient-to-l from-slate-200 to-transparent  sm:w-20 dark:from-black"></div>
+        <div className="gradient-div absolute bottom-0 left-0 h-5 w-full bg-gradient-to-r from-slate-700 to-slate-50 dark:from-[#1f1c18] dark:to-[#8e0e00]"></div>
       </div>
     </>
   );

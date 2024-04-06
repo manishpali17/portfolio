@@ -63,7 +63,7 @@ export default function Header() {
   }, [color]);
 
   return (
-    <header className="sticky top-0 z-10 flex max-w-full flex-col items-center justify-between scroll-smooth bg-transparent font-SpaceGrotesk text-white backdrop-blur-sm sm:flex-row sm:px-8 sm:py-7">
+    <header className="sticky top-0 z-10 flex max-w-full flex-col items-center justify-between scroll-smooth dark:bg-transparent bg-white font-SpaceGrotesk dark:text-white backdrop-blur-sm sm:flex-row sm:px-8 sm:py-7">
       {/* Logo + name */}
       <div className="flex w-full items-center justify-center py-2 text-center sm:w-1/4 sm:justify-start sm:text-start">
         <LuCode2
@@ -74,22 +74,22 @@ export default function Header() {
           <h1 className="text-md font-extrabold hover:animate-bounce">
             Manish Pali
           </h1>
-          <p className="hidden text-xs font-light text-gray-300 hover:animate-pulse md:block">
+          <p className="hidden text-xs font-light dark:text-gray-300 hover:animate-pulse md:block">
             Fullstack Web Developer
           </p>
         </div>
       </div>
 
       {/* Nav items */}
-      <nav className="relative flex max-w-full items-center justify-between gap-3 border-2 border-dashed border-white bg-[#222222] md:p-1 ">
+      <nav className="relative flex max-w-full items-center justify-between gap-3 border-2 border-dashed dark:border-white border-cyan-500 dark:bg-[#222222] md:p-1 ">
         {navItems.map((item) => (
           <Link
             href={item.href}
             key={item.title}
             className={clsx(
-              ' animate-expand-active  bg-[#222222] transition-all duration-500 ease-in-out ',
+              ' animate-expand-active  dark:bg-[#222222] transition-all duration-500 ease-in-out ',
               {
-                'bg-black': pathname === item.href,
+                'dark:bg-black bg-slate-200': pathname === item.href,
               },
             )}
           >
@@ -117,7 +117,7 @@ export default function Header() {
           <Link
             href={icon.url}
             key={icon.title}
-            className="hidden rounded-full bg-[#222222] p-2 transition-all duration-200 hover:scale-75 lg:block"
+            className="hidden rounded-full dark:bg-[#222222] bg-slate-200 p-2 transition-all duration-200 hover:scale-75 lg:block"
           >
             <span className="text-2xl">{icon.logo}</span>
           </Link>

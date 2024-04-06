@@ -17,11 +17,11 @@ export default function ProjectListing({ items }: { items: ProjectListing }) {
   return (
     <>
       <div className="flex max-w-full flex-col items-center justify-center  sm:pt-10 ">
-        <div className="max-w-4xl px-4 text-white ">
+        <div className="max-w-4xl px-4 dark:text-white ">
           <h1 className="workPage workTitle pb-2 text-center font-SpaceGrotesk text-4xl font-bold hover:animate-ping sm:py-4 sm:text-6xl">
             W
           </h1>
-          <p className="workPage text-center font-SpaceGrotesk text-[#C0C0C0] sm:py-6">
+          <p className="workPage text-center font-SpaceGrotesk dark:text-[#C0C0C0] sm:py-6">
             Below you can find projects which showcase what I can bring to the
             table. Within these projects, I dive into my process of how I solve
             real problems in today&apos;s world through the power of

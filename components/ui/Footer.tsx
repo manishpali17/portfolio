@@ -41,9 +41,9 @@ export default function Footer() {
           onClick={scrollToTop}
           style={{ display: isVisible ? 'block' : 'none' }}
         >
-          <MdArrowUpward className="h-12 w-12 animate-bounce rounded-full bg-slate-800 text-[#ff0000] " />
+          <MdArrowUpward className="h-12 w-12 animate-bounce rounded-full dark:bg-slate-800 bg-slate-200 text-slate-600 dark:text-[#ff0000] " />
         </button>
-        <div className="relative mt-5 flex w-full flex-col items-center justify-center overflow-hidden bg-[#010101] sm:mt-20">
+        <div className="relative mt-5 flex w-full flex-col items-center justify-center bg-slate-300 overflow-hidden dark:bg-[#010101] sm:mt-20">
           <div className="footer-big-in relative flex flex-col items-center justify-center py-[100px]">
             <Image
               src={moon}
@@ -75,24 +75,24 @@ export default function Footer() {
               height={150}
             />
 
-            <h5 className="font-HedvigLettersSans text-xl text-white">
+            <h5 className="font-HedvigLettersSans text-xl dark:text-white">
               Have an idea ?
             </h5>
-            <h1 className="text-center font-SpaceGrotesk text-2xl font-bold text-white sm:text-5xl">
+            <h1 className="text-center font-SpaceGrotesk text-2xl font-bold dark:text-white sm:text-5xl">
               Let&apos;s talk about it
             </h1>
             <div className="mt-3 active:animate-pulse">
               <Link href={'/contact'}>
                 <div className=" group relative flex animate-bounce items-center gap-3 rounded-full bg-[#ff0000] px-6 py-2 text-center font-HedvigLettersSans text-lg font-bold text-white transition-all duration-1000 hover:left-3 hover:top-3  ">
                   Contact
-                  <MdArrowOutward className="vibrate-1  text-black group-hover:scale-150 group-hover:opacity-100" />
+                  <MdArrowOutward className="vibrate-1  dark:text-black group-hover:scale-150 group-hover:opacity-100" />
                 </div>
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-center gap-6 py-4 font-SpaceGrotesk text-white sm:px-44 md:flex-row md:gap-44">
+        <div className="flex w-full flex-col items-center justify-center gap-6 py-4 font-SpaceGrotesk dark:text-white sm:px-44 md:flex-row md:gap-44">
           <div className=" flex cursor-pointer items-center gap-2 text-sm hover:underline">
             <Image
               className="w-12 hover:animate-ping"

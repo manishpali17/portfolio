@@ -6,10 +6,10 @@ export default function StacksListing({ data }: { data: Stack }) {
     <>
       {/* frontend stacks */}
       <div className="max-w-full">
-        <h1 className="px-5 text-center font-SpaceGrotesk text-4xl font-bold text-white sm:py-4 sm:text-5xl md:px-32 lg:px-40 xl:px-52">
+        <h1 className="px-5 text-center font-SpaceGrotesk text-4xl font-bold dark:text-white sm:py-4 sm:text-5xl md:px-32 lg:px-40 xl:px-52">
           Tech Stacks
         </h1>
-        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
+        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold dark:text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
           Frontend
         </h2>
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">
@@ -33,7 +33,7 @@ export default function StacksListing({ data }: { data: Stack }) {
       </div>
       {/* Backend stacks */}
       <div className="max-w-full">
-        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
+        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold dark:text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
           Backend
         </h2>
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">
@@ -57,7 +57,7 @@ export default function StacksListing({ data }: { data: Stack }) {
       </div>
       {/* DB stacks */}
       <div className="max-w-full">
-        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
+        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold dark:text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
           Database
         </h2>
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">
@@ -81,7 +81,7 @@ export default function StacksListing({ data }: { data: Stack }) {
       </div>
       {/* Tools */}
       <div className="max-w-full">
-        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
+        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold dark:text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
           Tools
         </h2>
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">
@@ -105,7 +105,7 @@ export default function StacksListing({ data }: { data: Stack }) {
       </div>
       {/* Languages */}
       <div className="max-w-full">
-        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
+        <h2 className="px-5 font-HedvigLettersSans text-2xl font-bold dark:text-white opacity-60 sm:text-3xl md:px-32 lg:px-40 xl:px-56">
           Languages
         </h2>
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">

@@ -13,28 +13,28 @@ export default function HomeIntro() {
   return (
     <div className="flex max-w-full flex-col items-start justify-start space-y-3 px-4 sm:items-center sm:space-y-6">
       <div className="HomeOne max-w-4xl overflow-hidden py-1 text-start font-bold sm:mt-6 sm:py-3">
-        <h1 className="homeTitle font-SpaceGrotesk text-4xl text-white hover:animate-bounce sm:text-7xl ">
+        <h1 className="homeTitle font-SpaceGrotesk text-4xl dark:text-white hover:animate-bounce sm:text-7xl ">
           F
         </h1>
       </div>
       <div className="HomeOne max-w-4xl font-SpaceGrotesk">
-        <p className="text-[#C7C7C7]">
+        <p className="dark:text-[#C7C7C7]">
           I create websites and applications that not only look fantastic but
           also function seamlessly. Whether it&apos;s developing innovative
           apps, or diving into the latest web technologies, I&apos;m all in.
           Let&apos;s connect and turn your ideas into digital reality!
         </p>
       </div>
-      <div className=" flex justify-start gap-5 pt-6 text-white md:w-[46rem] lg:w-[56rem]">
+      <div className=" flex justify-start gap-5 pt-6 dark:text-white md:w-[46rem] lg:w-[56rem]">
         <Link href={'/about'}>
-          <div className="group relative flex items-center gap-3 rounded-full bg-[#222222] px-3 py-2 text-center font-HedvigLettersSans text-lg transition-all duration-500 hover:bottom-3 hover:left-3">
+          <div className="group relative flex items-center gap-3 rounded-full bg-slate-200 dark:bg-[#222222] px-3 py-2 text-center font-HedvigLettersSans text-lg shadow-2xl transition-all duration-500 hover:bottom-3 hover:left-3">
             Read more
             <MdArrowOutward className="vibrate-1 text-gray opacity-50 group-hover:scale-150 group-hover:opacity-100" />
           </div>
         </Link>
 
         <Link href={'/contact'}>
-          <div className="relative flex items-center rounded-full border-2 bg-black px-4 py-2 text-center font-HedvigLettersSans text-lg shadow-2xl hover:bottom-4 hover:left-3 hover:bg-red-600">
+          <div className="relative flex items-center rounded-full border-2 dark:bg-black px-4 py-2 text-center font-HedvigLettersSans text-lg shadow-2xl hover:text-white hover:bottom-4 hover:left-3 hover:bg-red-600">
             Contact
           </div>
         </Link>

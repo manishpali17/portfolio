@@ -21,11 +21,11 @@ export default function ContactSection() {
 
   return (
     <>
-      <div className="w-full px-5 text-white lg:px-32 xl:px-80">
+      <div className="w-full px-5 dark:text-white lg:px-32 xl:px-80">
         <h1 className="contact contactTitle py-5 text-center font-SpaceGrotesk text-3xl font-bold hover:animate-bounce sm:text-6xl">
           C
         </h1>
-        <p className="contact text-center font-SpaceGrotesk text-[#898989]">
+        <p className="contact text-center font-SpaceGrotesk dark:text-[#898989]">
           Please fill out the following form and I will get back to you within
           the next 24 hours.
         </p>
@@ -33,7 +33,7 @@ export default function ContactSection() {
         <form action={dispatch} className="top space-y-16 pt-6">
           <div className="flex w-full flex-col items-center gap-5 sm:flex-row sm:gap-2">
             <div className="w-full space-y-1 sm:w-1/2">
-              <p className="w-5 rounded-full border border-gray-600 bg-black text-center font-SpaceGrotesk text-xs text-slate-400 opacity-90 ">
+              <p className="w-5 rounded-full border border-gray-600 dark:bg-black text-center font-SpaceGrotesk text-xs text-slate-400 opacity-90 ">
                 1
               </p>
               <label htmlFor="fullName" className="font-semibold">
@@ -45,7 +45,7 @@ export default function ContactSection() {
               <input
                 id="fullName"
                 type="text"
-                className="w-full rounded-full bg-[#171717]  px-4 py-2 outline-none hover:bg-[#2B2B2B]"
+                className="w-full rounded-full dark:bg-[#171717] bg-slate-100 hover:bg-slate-100  px-4 py-2 outline-none dark:hover:bg-[#2B2B2B]"
                 placeholder="Type your full name"
                 name="fullName"
                 aria-describedby="fullName-error"
@@ -65,7 +65,7 @@ export default function ContactSection() {
           </div>
           <div className="flex w-full flex-col items-center gap-5 sm:flex-row sm:gap-2 ">
             <div className="w-full space-y-1 sm:w-1/2">
-              <p className="w-5 rounded-full border border-gray-600 bg-black text-center font-SpaceGrotesk text-xs text-slate-400 opacity-90 ">
+              <p className="w-5 rounded-full border border-gray-600 dark:bg-black text-center font-SpaceGrotesk text-xs text-slate-400 opacity-90 ">
                 2
               </p>
               <label htmlFor="email" className="font-semibold">
@@ -78,7 +78,7 @@ export default function ContactSection() {
                 id="email"
                 type="email"
                 name="email"
-                className="w-full rounded-full bg-[#171717]  px-4 py-2 outline-none hover:bg-[#2B2B2B] "
+                className="w-full rounded-full dark:bg-[#171717] hover:bg-slate-300 bg-slate-100  px-4 py-2 outline-none dark:hover:bg-[#2B2B2B] "
                 placeholder="example@domain.com"
                 aria-describedby="email-error"
                 defaultValue=""
@@ -98,7 +98,7 @@ export default function ContactSection() {
           </div>
           <div className="flex w-full flex-col items-center gap-5 sm:flex-row sm:gap-2 ">
             <div className="w-full space-y-1 sm:w-1/2 ">
-              <p className="w-5 rounded-full border border-gray-600 bg-black text-center font-SpaceGrotesk text-xs text-slate-400 opacity-90 ">
+              <p className="w-5 rounded-full border border-gray-600 dark:bg-black text-center font-SpaceGrotesk text-xs text-slate-400 opacity-90 ">
                 3
               </p>
               <label htmlFor="description" className="font-semibold">
@@ -112,7 +112,7 @@ export default function ContactSection() {
                 id="description"
                 typeof="text"
                 name="description"
-                className="w-full rounded-xl bg-[#171717]  px-4 py-2 outline-none hover:bg-[#2B2B2B]"
+                className="w-full rounded-xl dark:bg-[#171717] bg-slate-100 hover:bg-slate-300 px-4 py-2 outline-none dark:hover:bg-[#2B2B2B]"
                 placeholder="Type your answer here..."
                 rows={3}
                 defaultValue=""
@@ -140,7 +140,7 @@ export default function ContactSection() {
           <div className="flex justify-center sm:w-full md:justify-center">
             <button
               type="submit"
-              className="w-max rounded-full bg-[#38E492] px-4 py-2 font-SpaceGrotesk text-lg font-bold text-black active:animate-bounce"
+              className="w-max rounded-full bg-[#38E492] px-4 py-2 font-SpaceGrotesk text-lg font-bold dark:text-black active:animate-bounce shadow-2xl"
               disabled={pending}
             >
               Send Message

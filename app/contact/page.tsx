@@ -18,7 +18,7 @@ export default function Page() {
         <ContactSection />
       </main>
       <footer>
-        <div className="flex w-full flex-col items-center justify-center gap-6 py-4 font-SpaceGrotesk text-white sm:px-44 md:flex-row md:gap-44">
+        <div className="flex w-full flex-col items-center justify-center gap-6 py-4 font-SpaceGrotesk dark:text-white sm:px-44 md:flex-row md:gap-44">
           <div className=" flex cursor-pointer items-center gap-2 text-sm font-semibold hover:underline">
             <Image
               className="w-12"
