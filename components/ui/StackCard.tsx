@@ -10,7 +10,7 @@ export default function StackCard({
 }) {
   return (
     <>
-      <div className="relative flex max-w-full min-h-20 animate-pulse bg-slate-200  items-center justify-start rounded-2xl dark:bg-black pl-0.5 opacity-95 hover:bottom-1 hover:cursor-pointer dark:hover:bg-[#222222] hover:opacity-100 active:animate-ping md:animate-bounce">
+      <div className="relative flex min-h-20 max-w-full animate-pulse items-center  justify-start rounded-2xl bg-slate-200 pl-0.5 opacity-95 hover:bottom-1 hover:cursor-pointer hover:opacity-100 active:animate-ping dark:bg-black dark:hover:bg-[#222222] md:animate-bounce">
         <Image
           className="hover:animate-spin"
           alt={title}
@@ -22,7 +22,7 @@ export default function StackCard({
           <h1 className="text-md font-HedvigLettersSans font-normal dark:text-white">
             {title}
           </h1>
-          <p className="font-mono font-extralight dark:text-white opacity-50">
+          <p className="font-mono font-extralight opacity-50 dark:text-white">
             {keyword}
           </p>
         </div>

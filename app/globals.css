@@ -66,28 +66,25 @@ html {
 }
 
 .gradient-div {
- @apply dark:bg-[-webkit-linear-gradient(_to_right,#1f1c18,#8e0e00_)]; 
+  @apply dark:bg-[-webkit-linear-gradient(_to_right,#1f1c18,#8e0e00_)];
 }
 
-::-webkit-scrollbar {
-  @apply w-3;
-}
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply w-3;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  @apply dark:bg-black;
-  /* Change this to your desired track color */
-}
+  .scrollbar::-webkit-scrollbar-track {
+    @apply rounded-full dark:bg-black;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  @apply rounded hover:cursor-pointer dark:bg-red-700 bg-slate-300;
-  /* Change this to your desired handle color */
-}
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded bg-slate-200 hover:cursor-pointer dark:bg-red-700;
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
 @keyframes scroll {
@@ -115,6 +112,6 @@ html {
   }
 
   .animate-scroll {
-   animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
   }
 }

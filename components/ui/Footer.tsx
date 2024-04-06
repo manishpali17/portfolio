@@ -5,10 +5,13 @@ import Image from 'next/image';
 import spaceman from '@/public/space-men.png';
 import moon from '@/public/moon.png';
 import { useEffect, useState } from 'react';
+import { CiDark, CiLight } from 'react-icons/ci';
+import { useTheme } from 'next-themes';
 
 export default function Footer() {
   const currentYear = new Date(Date.now()).getFullYear();
   const [isVisible, setIsVisible] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     // Show/hide scroll to top button based on scroll position
@@ -37,13 +40,26 @@ export default function Footer() {
     <>
       <footer>
         <button
-          className={`fixed bottom-5 right-8 z-10 `}
+          className={`fixed bottom-5 right-8 z-10 hidden rounded-full bg-black p-2 dark:block ${isVisible ? 'invisible' : 'visible'}`}
+          onClick={() => setTheme('light')}
+        >
+          <CiLight className="size-12 text-orange-600" />
+        </button>
+        <button
+          className={`fixed bottom-5 right-8 z-10 rounded-full bg-slate-300 p-2 dark:hidden ${isVisible ? 'invisible' : 'visible'} `}
+          onClick={() => setTheme('dark')}
+        >
+          <CiDark className="size-12 text-slate-500" />
+        </button>
+        <button
+          className={`fixed bottom-5 right-8 z-10 p-2 `}
           onClick={scrollToTop}
           style={{ display: isVisible ? 'block' : 'none' }}
         >
-          <MdArrowUpward className="h-12 w-12 animate-bounce rounded-full dark:bg-slate-800 bg-slate-200 text-slate-600 dark:text-[#ff0000] " />
+          <MdArrowUpward className="size-12 animate-bounce rounded-full bg-slate-200 text-slate-600 dark:bg-slate-800 dark:text-[#ff0000] " />
         </button>
-        <div className="relative mt-5 flex w-full flex-col items-center justify-center bg-slate-300 overflow-hidden dark:bg-[#010101] sm:mt-20">
+
+        <div className="relative mt-5 flex w-full flex-col items-center justify-center overflow-hidden bg-slate-300 dark:bg-[#010101] sm:mt-20">
           <div className="footer-big-in relative flex flex-col items-center justify-center py-[100px]">
             <Image
               src={moon}
@@ -85,7 +101,7 @@ export default function Footer() {
               <Link href={'/contact'}>
                 <div className=" group relative flex animate-bounce items-center gap-3 rounded-full bg-[#ff0000] px-6 py-2 text-center font-HedvigLettersSans text-lg font-bold text-white transition-all duration-1000 hover:left-3 hover:top-3  ">
                   Contact
-                  <MdArrowOutward className="vibrate-1  dark:text-black group-hover:scale-150 group-hover:opacity-100" />
+                  <MdArrowOutward className="vibrate-1  group-hover:scale-150 group-hover:opacity-100 dark:text-black" />
                 </div>
               </Link>
             </div>

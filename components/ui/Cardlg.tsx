@@ -14,7 +14,7 @@ export default function Cardlg({
   return (
     <>
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <div className="group mt-8 flex max-w-full cursor-pointer flex-col-reverse rounded-lg bg-slate-200 dark:bg-[#1F1F1F] drop-shadow-2xl transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110 sm:flex-row">
+        <div className="group mt-8 flex max-w-full cursor-pointer flex-col-reverse rounded-lg bg-slate-200 drop-shadow-2xl transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110 dark:bg-[#1F1F1F] sm:flex-row">
           {/* left or down part*/}
           <div className="flex w-full flex-row items-center justify-center  gap-5 p-5 dark:text-white md:w-1/2 ">
             <Image
