@@ -30,18 +30,18 @@ export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: 'auto',
     });
   };
   return (
     <>
       <footer>
         <button
-          className={`fixed bottom-5 right-8 z-10 rounded-full`}
+          className={`fixed bottom-5 right-8 z-10 `}
           onClick={scrollToTop}
           style={{ display: isVisible ? 'block' : 'none' }}
         >
-          <MdArrowUpward className="animate-bounce text-[#ff0000] " size={50} />
+          <MdArrowUpward className="h-12 w-12 animate-bounce rounded-full bg-slate-800 text-[#ff0000] " />
         </button>
         <div className="relative mt-5 flex w-full flex-col items-center justify-center overflow-hidden bg-[#010101] sm:mt-20">
           <div className="footer-big-in relative flex flex-col items-center justify-center py-[100px]">
