@@ -108,16 +108,24 @@ export default function Footer() {
             <Link href={'/'}>Side Projects</Link>
           </div>
           <div className=" flex justify-center gap-5 py-5">
-            <Link href={'https://mainshpali-weather-app.netlify.app/'}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={'https://mainshpali-weather-app.netlify.app/'}
+            >
               <p className="cursor-pointer opacity-50 hover:animate-pulse hover:opacity-100">
                 Weather App
               </p>
-            </Link>
-            <Link href={'https://manishpali-currency-convertor.netlify.app/'}>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={'https://manishpali-currency-convertor.netlify.app/'}
+            >
               <p className="cursor-pointer opacity-50 hover:animate-pulse hover:opacity-100">
                 Currency Convertor
               </p>
-            </Link>
+            </a>
           </div>
         </div>
       </footer>

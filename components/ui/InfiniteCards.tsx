@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { InfiniteCards } from '@/app/lib/definitions';
+import { type InfiniteCards } from '@/app/lib/definitions';
+
 export default function InfiniteCards({ data }: { data: InfiniteCards }) {
   return (
     <>
@@ -16,7 +17,7 @@ export default function InfiniteCards({ data }: { data: InfiniteCards }) {
             />
           ))}
           <Image
-            alt="Projects Images"
+            alt="Projects Images2"
             src={
               'https://res.cloudinary.com/doh56heah/image/upload/v1706501871/Portfollio/currency-converter_ytdvdi.jpg'
             }

@@ -5,7 +5,7 @@ import {
   animateToTop,
   textAnimation,
 } from '@/components/Helpers/gsap';
-import { ProjectListing } from '@/app/lib/definitions';
+import { type ProjectListing } from '@/app/lib/definitions';
 import { useEffect } from 'react';
 
 export default function ProjectListing({ items }: { items: ProjectListing }) {

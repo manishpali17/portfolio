@@ -2,9 +2,12 @@ import HomeIntro from '@/components/ui/HomeIntro';
 import InfiniteCards from '@/components/ui/InfiniteCards';
 import Cardlg from '@/components/ui/Cardlg';
 import { fetchProjects } from '@/app/lib/action';
+import StacksListing from '@/components/ui/StacksListing';
+import { fetchStack } from '@/app/lib/action';
 
 export default async function Home() {
   const data = await fetchProjects();
+  const stack = await fetchStack();
   return (
     <>
       <main>
@@ -32,6 +35,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
+        <StacksListing data={stack} />
       </main>
     </>
   );

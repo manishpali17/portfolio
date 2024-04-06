@@ -15,7 +15,12 @@ export default function StacksListing({ data }: { data: Stack }) {
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">
           <div className="grid w-full gap-4 sm:grid-cols-2 md:w-3/4 md:grid-cols-3 xl:grid-cols-4">
             {data?.stackItemsFrontend?.map((item) => (
-              <a href={item.url} key={item.title}>
+              <a
+                href={item.url}
+                key={item.title}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StackCard
                   title={item.title}
                   icon={item.icon}
@@ -34,7 +39,12 @@ export default function StacksListing({ data }: { data: Stack }) {
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">
           <div className="grid w-full gap-4 sm:grid-cols-2 md:w-3/4 md:grid-cols-3 xl:grid-cols-4">
             {data?.stackItemsBackend?.map((item) => (
-              <a href={item.url} key={item.title}>
+              <a
+                href={item.url}
+                key={item.title}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StackCard
                   title={item.title}
                   icon={item.icon}
@@ -53,7 +63,12 @@ export default function StacksListing({ data }: { data: Stack }) {
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">
           <div className="grid w-full gap-4 sm:grid-cols-2 md:w-3/4 md:grid-cols-3 xl:grid-cols-4">
             {data?.stackItemsDatabase?.map((item) => (
-              <a href={item.url} key={item.title}>
+              <a
+                href={item.url}
+                key={item.title}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StackCard
                   title={item.title}
                   icon={item.icon}
@@ -72,7 +87,12 @@ export default function StacksListing({ data }: { data: Stack }) {
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">
           <div className="grid w-full gap-4 sm:grid-cols-2 md:w-3/4 md:grid-cols-3 xl:grid-cols-4">
             {data?.tools?.map((item) => (
-              <a href={item.url} key={item.title}>
+              <a
+                href={item.url}
+                key={item.title}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StackCard
                   title={item.title}
                   icon={item.icon}
@@ -91,7 +111,12 @@ export default function StacksListing({ data }: { data: Stack }) {
         <div className="mx-3 my-5 flex max-w-full items-center justify-center">
           <div className="grid w-full gap-4 sm:grid-cols-2 md:w-3/4 md:grid-cols-3 xl:grid-cols-4">
             {data?.language?.map((item) => (
-              <a href={item.url} key={item.title}>
+              <a
+                href={item.url}
+                key={item.title}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StackCard
                   title={item.title}
                   icon={item.icon}

@@ -1,7 +1,7 @@
 import { MdArrowOutward } from 'react-icons/md';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Cardlg } from '@/app/lib/definitions';
+import { type Cardlg } from '@/app/lib/definitions';
 
 export default function Cardlg({
   icon,
@@ -13,7 +13,7 @@ export default function Cardlg({
 }: Cardlg) {
   return (
     <>
-      <Link href={link}>
+      <a href={link} target="_blank" rel="noopener noreferrer">
         <div className="group mt-8 flex max-w-full cursor-pointer flex-col-reverse rounded-lg bg-[#1F1F1F] drop-shadow-2xl transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110 sm:flex-row">
           {/* left or down part*/}
           <div className="flex w-full flex-row items-center justify-center  gap-5 p-5 text-white md:w-1/2 ">
@@ -53,7 +53,7 @@ export default function Cardlg({
             </div>
           </div>
         </div>
-      </Link>
+      </a>
     </>
   );
 }

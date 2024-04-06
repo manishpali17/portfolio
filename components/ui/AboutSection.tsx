@@ -22,9 +22,8 @@ export default function AboutSection() {
         <div className="about flex max-w-4xl flex-col-reverse items-center gap-3 px-5 sm:flex-row-reverse md:px-0">
           <Image
             src={me}
-            alt="my image"
+            alt="Manish Pali"
             className="w-32 cursor-pointer rounded-full sm:w-40 md:rounded-md"
-            placeholder={'empty'}
           />
           <div>
             <h1 className="about aboutTitle font-SpaceGrotesk text-3xl font-extrabold hover:animate-pulse sm:text-6xl">
@@ -64,9 +63,12 @@ export default function AboutSection() {
             How I got started
           </h1>
           <p className="font-SpaceGrotesk text-lg">
-            I&apos;ve been involved in trying to get into development since my
-            1st year of college and when you decide to learn something it is
-            obvious you face difficulties.{' '}
+            Started learning programming during college, exploring app and web
+            development, with a significant project in .NET MVC for medicine
+            management. Possess over a year of experience in JavaScript, HTML,
+            and CSS, with recent focus on backend with Express and frontend with
+            React and Next.js. Eager to apply skills and grow in a dynamic work
+            environment
           </p>
 
           <h1 className="font-SpaceGrotesk text-2xl font-extrabold">
