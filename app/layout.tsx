@@ -23,13 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ThemeProvider attribute="class">
-        <body
-          className={`${inter.className} scrollbar antialiased dark:bg-[#0B0B0B]`}
-        >
-          {children}
-        </body>
-      </ThemeProvider>
+      <body
+        className={`${inter.className} scrollbar scroll-smooth antialiased dark:bg-[#0B0B0B]`}
+      >
+        <ThemeProvider attribute="class">{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

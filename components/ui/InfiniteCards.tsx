@@ -10,7 +10,7 @@ export default function InfiniteCards({ data }: { data: InfiniteCards }) {
             <Image
               alt="Projects Images"
               src={slide.image}
-              className="relative w-[250px] sm:h-[200px] rounded-t-lg hover:bottom-1 hover:animate-spin sm:w-[350px]"
+              className="relative w-[250px] rounded-t-lg hover:bottom-1 hover:animate-spin sm:h-[200px] sm:w-[350px]"
               key={index}
               width={350}
               height={200}

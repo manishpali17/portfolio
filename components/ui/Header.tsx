@@ -68,7 +68,7 @@ export default function Header() {
       <div className="flex w-full items-center justify-center py-2 text-center sm:w-1/4 sm:justify-start sm:text-start">
         <LuCode2
           className={`mr-2 text-3xl hover:animate-spin sm:mr-4`}
-          style={{ color: generateRandomColor() }}
+          style={{ color }}
         />
         <div className="flex flex-col sm:hidden md:block">
           <h1 className="text-md font-extrabold hover:animate-bounce">

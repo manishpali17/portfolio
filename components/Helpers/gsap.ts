@@ -43,7 +43,7 @@ const animateToTop = (className: string) => {
   gsap.to(elements, {
     opacity: 1,
     y: '0%',
-    duration: 1,
+    duration: 1.4,
     stagger: 0.5,
     scrollTrigger: {
       trigger: elements,

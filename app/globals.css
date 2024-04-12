@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 .vibrate-1 {
   -webkit-animation: vibrate-1 0.3s linear infinite both;
   animation: vibrate-1 0.3s linear infinite both;
@@ -65,11 +61,10 @@ html {
   }
 }
 
-.gradient-div {
-  @apply dark:bg-[-webkit-linear-gradient(_to_right,#1f1c18,#8e0e00_)];
-}
-
 @layer utilities {
+  .gradient-div {
+    @apply dark:bg-[-webkit-linear-gradient(_to_right,#1f1c18,#8e0e00_)];
+  }
   .scrollbar::-webkit-scrollbar {
     @apply w-3;
   }

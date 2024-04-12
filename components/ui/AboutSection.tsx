@@ -14,7 +14,7 @@ export default function AboutSection() {
     animateLeftToRight('.about');
     animateToTop('.top');
     textAnimation('.aboutTitle', 'From Passion to a Developer', 3, 'none');
-  });
+  }, []);
 
   return (
     <>

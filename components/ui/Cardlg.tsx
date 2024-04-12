@@ -1,7 +1,6 @@
 import { MdArrowOutward } from 'react-icons/md';
-import Link from 'next/link';
 import Image from 'next/image';
-import { type Cardlg } from '@/app/lib/definitions';
+import type { Card } from '@/app/lib/definitions';
 
 export default function Cardlg({
   icon,
@@ -10,7 +9,7 @@ export default function Cardlg({
   image,
   bgColor,
   link,
-}: Cardlg) {
+}: Card) {
   return (
     <>
       <a href={link} target="_blank" rel="noopener noreferrer">
