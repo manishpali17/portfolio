@@ -8,7 +8,7 @@ export default function HomeIntro() {
   useEffect(() => {
     animateLeftToRight('.HomeOne');
     textAnimation('.homeTitle', 'Fullstack Web Developer', 1.5, 'none');
-  });
+  }, []);
 
   return (
     <div className="flex max-w-full flex-col items-start justify-start space-y-3 px-4 sm:items-center sm:space-y-6">

@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import ContactSection from '@/components/ui/ContactSection';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -7,9 +7,11 @@ import { CiDark, CiLight } from 'react-icons/ci';
 import { useTheme } from 'next-themes';
 
 export default function Page() {
-  if (typeof window !== 'undefined') {
-    window.scrollTo(0, 0);
-  }
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
+  }, []);
   const { theme, setTheme } = useTheme();
   return (
     <>

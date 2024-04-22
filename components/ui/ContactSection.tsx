@@ -17,7 +17,7 @@ export default function ContactSection() {
     animateToTop('.top');
     animateLeftToRight('.contact');
     textAnimation('.contactTitle', 'Contact', 1, 'none');
-  });
+  }, []);
 
   return (
     <>

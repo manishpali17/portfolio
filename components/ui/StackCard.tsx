@@ -1,13 +1,12 @@
 import Image from 'next/image';
-export default function StackCard({
-  icon,
-  title,
-  keyword,
-}: {
+
+interface StackCardProps {
   icon: string;
   title: string;
   keyword: string;
-}) {
+}
+
+export default function StackCard({ icon, title, keyword }: StackCardProps) {
   return (
     <>
       <div className="relative flex min-h-20 max-w-full animate-pulse items-center  justify-start rounded-2xl bg-slate-200 pl-0.5 opacity-95 hover:bottom-1 hover:cursor-pointer hover:opacity-100 active:animate-ping dark:bg-black dark:hover:bg-[#222222] md:animate-bounce">

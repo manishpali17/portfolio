@@ -5,7 +5,7 @@ import {
   animateToTop,
   textAnimation,
 } from '@/components/Helpers/gsap';
-import { type ProjectListing } from '@/app/lib/definitions';
+import type { ProjectListing } from '@/app/lib/definitions';
 import { useEffect } from 'react';
 
 export default function ProjectListing({ items }: { items: ProjectListing }) {
@@ -13,7 +13,7 @@ export default function ProjectListing({ items }: { items: ProjectListing }) {
     animateLeftToRight('.workPage');
     animateToTop('.top');
     textAnimation('.workTitle', 'Work', 1, 'none');
-  });
+  }, []);
   return (
     <>
       <div className="flex max-w-full flex-col items-center justify-center  sm:pt-10 ">
